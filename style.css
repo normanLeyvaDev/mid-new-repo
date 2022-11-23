@@ -1,0 +1,595 @@
+* {
+   
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1F4FB;
+    margin: 0
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2vw;
+    padding: 0;
+}
+.contenedor-logo-circle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em;
+
+}
+
+.botones-central {
+    padding: 0 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+
+.botones-central a {
+    font-weight: bold;
+    padding: 0 1em;
+    display: inline-block;
+    text-decoration: none;
+    color: #6C718B
+}
+
+.contenedor-boton-contacta {
+    text-align: center;
+    background: #072AC8;
+    width: 9em;
+    margin: 1em 2em;
+    padding: 1em 0;
+
+}
+.boton-contacta {
+    color: white;
+    padding: 2% 3%;
+    text-decoration: none;
+}
+
+.contenedor-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+    padding: 0;
+}
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2vw;
+    padding: 0;
+}
+
+.hero-text {
+    padding: 10em 5em;
+    padding: 7em 0;
+    margin: 0;
+}
+
+.hero-text h1 {
+    text-align: left;
+    font-size: 4em;
+    padding-bottom: 2%;
+    margin: 0
+}
+
+.hero-description {
+    font-size: 20px;
+    text-align: left;
+    color: #6C718B
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    padding: 2em 0;
+}
+
+.see-ourwork-click {
+    text-decoration: none;
+    padding: 0 1em;
+    color: #6C718B;
+    font-weight: bold;
+}
+
+.touch-button {
+    background-color: #072AC8;
+    padding: 1em 2em;
+}
+
+.touch-button a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero-image {
+    position: relative;
+    padding: 0em;
+    margin: 0em;
+}
+
+.hero-image-main {
+    width: 100%;
+    padding: 0;
+}
+
+.hero-card-1 {
+    width: 40%;
+    position: absolute;
+}
+
+.hero-card-2 {
+    width: 40%;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+}
+
+.grid-logos {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vw 10%
+}
+
+.seccion-proyectos h2 {
+    font-size: 3vw;
+    font-weight: bold;
+    margin: 2vw;
+    padding: 1vw 5vw;
+}
+
+.coleccion-de-proyectos {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    margin: 2vw 2vw;
+    padding: 3vw;
+}
+
+.background-card1 {
+    background-image: url('./project-assets/projects-section/1.jpg');
+    width: 27vw;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-card2 {
+    background-image: url('./project-assets/projects-section/2.jpg');
+    width: 27vw;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-card3 {
+    background-image: url('./project-assets/projects-section/3.jpg');
+    width: 27vw;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    align-content: center;
+    background-color: white;
+    color: #292e47;
+    width: 27vw;
+    height: 30vh;
+    padding: 2vw 0;
+}
+
+.project-card-title {
+    line-height: 2em;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    padding: 1vw 2vw;
+}
+
+.project-card-subtitle {
+    text-align: left;
+    padding: 0vw 2vw 2vw;
+}
+
+.project-link {
+    display: flex;
+    justify-content: left;
+    line-height: 10hw;
+    color: #072ac8;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0vw 2vw 2vw;
+}
+
+.service-grid {
+    width: 100%;
+}
+
+
+.projects-headings {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 3vw 5vw;
+}
+
+.testimonials-grill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-image: url(./project-assets/testimonial-section/orbit.png);
+    background-repeat: none;
+    background-position: center;
+    background-color: #292e47;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.row-superior {
+    display: flex;
+    flex-direction: col;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.container-de-proyectos {
+    padding: 0;
+}
+
+.row-superior h1 {
+    color: white;
+    text-align: center;
+    padding: 0;
+}
+
+.row-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.row-media h2 {
+    color: #ffc600;
+    text-align: center;
+    margin: 0;
+}
+
+.row-inferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.memo
+
+#memoji1 {
+    padding: 0 2em;
+    margin: 0;
+    position: absolute;
+}
+
+#memoji2 {
+    padding: 0 3em;
+    margin: 0;
+    position: absolute;
+}
+#memoji3 {
+    padding: 0 4em;
+    margin: 0;
+    position: absolute;
+}
+#memoji4 {
+    padding: 0 2m;
+    margin: 0;
+    position: absolute;
+}
+
+
+
+.memoji img {
+    width: 50%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.flex-kris {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.kris {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(./project-assets/testimonial-section/profile.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0 1vw;
+}
+
+.kris-box {
+    display: flex;
+
+}
+.kristine2 {
+    padding: 0;
+    margin: 0;
+    color: rgb(159, 198, 240);
+}
+
+.kristine2 a {
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 2vw 4vw;
+
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: white;
+    line-height: 5vw;
+
+    display: flex;
+    justify-content: left;
+    padding: 3vw 0vw;
+    margin: 2vw 2vw;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1em;
+    line-height: 1.5vw;
+}
+
+.service-icon1 {
+    background-image: url(./project-assets/services-section/icons/1.svg);
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 1em;
+    margin: 0 1em;
+}
+
+.service-icon2 {
+    background-image: url(./project-assets/services-section/icons/2.svg);
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 1em;    
+    margin: 0 1em;
+}
+
+.service-icon3 {
+    background-image: url(./project-assets/services-section/icons/3.svg);
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 1em;
+    margin: 0 1em;
+}
+
+.service-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: left;
+    justify-content: left;
+}
+
+
+
+.project-description {
+    padding: 1em;
+    line-height: 1.5vw;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.contenedor-footer {
+    background-color: #ffc600;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10vw 25vw;
+    margin: 0;
+}
+
+.container-footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+.cajon-formulario {
+    display: flex;;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container-bajo-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 6vw;
+}
+
+.footer-content-logo img{
+    width: 40%;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction:column;
+}
+
+.footer-content {
+    padding: 1vw;
+}
+.footer-content-address {
+    line-height: 1.5vw;
+}
+
+.cta-heading {
+    font-size: 2vw;
+}
+
+.cta-subtitle {
+    color: #6C718B;
+}
+
+.entra-email input {
+    background-image: url(./project-assets/newsletter/icon/mail.svg);
+    background-position:left;
+    background-repeat: no-repeat;
+    width: 12vw;
+    height: 6vh;
+    border: 0;
+    padding: 0 3vw;
+    margin: 2vw 1vw;
+}
+
+.suscribe-btn input {
+    background-color: #072AC8;
+    color: white;
+    text-decoration: none;
+    border: 0;
+    width: 6vw;
+    height: 6vh;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
+  }
