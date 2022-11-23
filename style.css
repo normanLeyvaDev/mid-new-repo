@@ -7,13 +7,14 @@
 
 body {
     background-color: #F1F4FB;
-    margin: 0
+    margin: 0 auto; 
+    max-width: 1400px;
 }
 
 .contenedor-nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 2vw;
+    margin: 0 5rem;
     padding: 0;
 }
 .contenedor-logo-circle {
@@ -65,8 +66,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 2vw;
-    padding: 0;
+    margin: 0 5rem;
+    padding: 0em;
 }
 
 .hero-text {
@@ -136,33 +137,37 @@ body {
     right: 0;
 }
 
+.services-grid {
+    margin: 0 1rem;
+    padding: 0rem;
+}
+
 .grid-logos {
     display: flex;
     align-content: center;
     justify-content: space-around;
     align-items: center;
-    padding: 5vw 10%
+    padding: 2em 2em
+
 }
 
 .seccion-proyectos h2 {
     font-size: 3vw;
     font-weight: bold;
     margin: 2vw;
-    padding: 1vw 5vw;
 }
 
 .coleccion-de-proyectos {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    margin: 2vw 2vw;
-    padding: 3vw;
+    margin: 2.5rem auto;
 }
 
 .background-card1 {
     background-image: url('./project-assets/projects-section/1.jpg');
     width: 27vw;
-    height: 35vh;
+    height: 25vh;
     background-size: cover;
     background-position: center;
 }
@@ -170,7 +175,7 @@ body {
 .background-card2 {
     background-image: url('./project-assets/projects-section/2.jpg');
     width: 27vw;
-    height: 35vh;
+    height: 25vh;
     background-size: cover;
     background-position: center;
 }
@@ -178,22 +183,26 @@ body {
 .background-card3 {
     background-image: url('./project-assets/projects-section/3.jpg');
     width: 27vw;
-    height: 35vh;
+    height: 25vh;
     background-size: cover;
     background-position: center;
+}
+
+.project-card {
+    margin: 0.5rem;
 }
 
 .project-card-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    align-content: center;
+    align-content: left;
+    align-content: left;
     background-color: white;
     color: #292e47;
     width: 27vw;
-    height: 30vh;
-    padding: 1vw 0;
+    height: 20vh;
+    padding: 0;
 }
 
 .project-card-title {
@@ -210,115 +219,100 @@ body {
 }
 
 .project-link {
-    display: flex;
-    justify-content: left;
-    line-height: 10hw;
     color: #072ac8;
     text-decoration: none;
     font-weight: 500;
-    padding: 0vw 2vw 2vw;
+    margin: 1.3em;
+    /* padding: 1em; */
 }
 
-.service-grid {
-    width: 100%;
-}
 
+.service-header {
+    margin: 0 5rem;
+}
 
 .projects-headings {
     font-size: 3vw;
     font-weight: bold;
-    margin-bottom: 10px;
-    padding: 3vw 5vw;
+    margin: 1rem 0;    
 }
 
 .testimonials-grill {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    align-content: center;
     background-image: url(./project-assets/testimonial-section/orbit.png);
-    background-repeat: none;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     background-color: #292e47;
-    padding: 7vw;
-    margin: 0;
     position: relative;
-}
-
-.row-superior {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-}
-
-.container-de-proyectos {
-    padding: 0;
-}
-
-.row-superior h1 {
-    color: white;
-    text-align: center;
-    padding: 0;
-}
-
-.row-media {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    padding: 2vw;
+    background-image: url(./project-assets/testimonial-section/orbit.png);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    background-color: #292e47;
+    padding: 7vw;
+    margin: 0 5rem;
+    position: relative; */
 }
 
-.row-media h2 {
-    color: #ffc600;
+
+.testimonials-grill h1 {
+    color: white;
+    margin: 4.5rem auto;
+    font-size: 40px;
     text-align: center;
-    margin: 0;
 }
 
-.row-inferior {
+.testimonials-grill h2 {
+    color:#ffc600;
+    font-size: 24px;
+    text-align: center;
+    margin: 4rem 26rem;
+    font-weight: 500;
+}
+
+.testimonials-grill > div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    padding:
+    margin: 4rem auto;
 }
 
-#memoji1 {
-    padding: 0 2em;
-    margin: 0;
+.testimonials-grill img {
+    width: 10rem;
     position: absolute;
 }
 
-#memoji2 {
-    padding: 0 3em;
-    margin: 0;
-    position: absolute;
-}
-#memoji3 {
-    padding: 0 4em;
-    margin: 0;
-    position: absolute;
-}
-#memoji4 {
-    padding: 0 2m;
-    margin: 0;
-    position: absolute;
+.emoji1 {
+    top: 9%;
+    left: 10%;
 }
 
-.memoji {
-    width: 20%;
+.emoji2 {
+    bottom: 9%;
+    right: 10%;
 }
 
-.memoji img {
-    width: 50%;
-    padding: 0 3vw;
-    margin: 0;
-    position: relative;
+.emoji3 {
+    top: 9%;
+    right: 10%;
+
+}
+
+.emoji4 {
+    bottom: 9%;
+    left: 10%;
+}
+
+.container-de-proyectos {
+    padding: 0;
+    margin: 1rem 1 rem;
 }
 
 .flex-kris {
@@ -369,16 +363,16 @@ body {
 .service-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
     background-color: white;
-    line-height: 5vw;
-
-    display: flex;
-    justify-content: left;
-    padding: 3vw 0vw;
-    margin: 2vw 2vw;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+    margin: 0 1rem;
+    width: 80rem;
+    height: 20rem;
+    min-height: 250px;
+    min-width: 320px;
 }
 
 .project-title {
@@ -388,8 +382,8 @@ body {
     align-content: left;
     font-weight: bold;
     font-size: 20px;
-    padding: 1em;
-    line-height: 1.5vw;
+    /* padding: 1em; */
+    margin: 1em 0;
 }
 
 .service-icon1 {
@@ -402,7 +396,7 @@ body {
     background-size: 40px;
     background-repeat: no-repeat;
     padding: 1em;
-    margin: 0 1em;
+    /* margin: 0 1em; */
 }
 
 .service-icon2 {
@@ -415,7 +409,7 @@ body {
     background-size: 40px;
     background-repeat: no-repeat;
     padding: 1em;    
-    margin: 0 1em;
+    /* margin: 0 1em; */
 }
 
 .service-icon3 {
@@ -428,7 +422,7 @@ body {
     background-size: 40px;
     background-repeat: no-repeat;
     padding: 1em;
-    margin: 0 1em;
+    /* margin: 0 1em; */
 }
 
 .service-text {
@@ -442,8 +436,9 @@ body {
 
 
 .project-description {
-    padding: 1em;
-    line-height: 1.5vw;
+    /* padding: 1em; */
+    height: 50px;
+    margin-bottom: 4em;
 }
 
 .footer-box {
@@ -460,7 +455,6 @@ body {
     flex-direction: row;
     justify-content: center;
     padding: 10vw 25vw;
-    margin: 0;
 }
 
 .container-footer-form {
@@ -489,10 +483,16 @@ body {
     width: 40%;
 }
 
-.footer-links {
+/* .footer-links {
     display: flex;
     justify-content: space-around;
     flex-direction:column;
+} */
+
+.footer-links {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-content {
@@ -530,68 +530,126 @@ body {
     height: 6vh;
 }
 
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
+/* responsive para tablet */
+@media (max-width: 868px) {
 
-@media (min-width: 1281px) {
+
+
+    .project-card-text{
+        width: 100%;
+    }
+
+    .project-card {
+        margin: 2rem 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .background-card1,
+    .background-card2, .background-card3{
+        width: 100%;
+    }
+    .coleccion-de-proyectos {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .project-description {
+        margin-bottom: auto;
+        padding-bottom: 5em;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 1rem 2rem;
+        padding: 0;
+    }
+
+    .service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: white;
+    justify-content: space-around;
+    padding: 5rem 2rem;
+    margin: 2rem 0;
+    width: 50%;
+    }
+
+    .memoji {
+        width: 100%;
+    }
+
+}
   
+
+
+/* responsive para smartphone */
+@media (min-width: 320px) and (max-width: 480px) {
+    body {
+        background-color: red;
+    }
     /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-  
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
-    /* CSS */
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-    
-    /* CSS */
-    
+
+    .contenedor-logo-circle {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .contenedor-nav {
+        flex-direction: column;
+    }
+
+    .botones-central {
+        flex-direction: column;
+    }
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        padding: 0;
+    }
+    .hero-card-1, .hero-card-2 {
+        display: none;
+    }
+
+    .grid-logos {
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    #amazon {
+        display: none;
+    }
+
+    .coleccion-de-proyectos {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .services-grid {
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        margin: 2vw 4vw;
+    }
   }
