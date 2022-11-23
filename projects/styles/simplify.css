@@ -1,0 +1,59 @@
+* {
+   
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2vw;
+    padding: 0;
+}
+.contenedor-logo-circle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 2em;
+
+}
+
+.botones-central {
+    padding: 0 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+}
+
+.botones-central a {
+    font-weight: bold;
+    padding: 0 1em;
+    display: inline-block;
+    text-decoration: none;
+    color: #6C718B
+}
+
+.contenedor-boton-contacta {
+    text-align: center;
+    background: #072AC8;
+    width: 9em;
+    margin: 1em 2em;
+    padding: 1em 0;
+
+}
+.boton-contacta {
+    color: white;
+    padding: 2% 3%;
+    text-decoration: none;
+}
+
+.container-project-simplify {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}

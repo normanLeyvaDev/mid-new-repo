@@ -162,7 +162,7 @@ body {
 .background-card1 {
     background-image: url('./project-assets/projects-section/1.jpg');
     width: 27vw;
-    height: 40vh;
+    height: 35vh;
     background-size: cover;
     background-position: center;
 }
@@ -170,7 +170,7 @@ body {
 .background-card2 {
     background-image: url('./project-assets/projects-section/2.jpg');
     width: 27vw;
-    height: 40vh;
+    height: 35vh;
     background-size: cover;
     background-position: center;
 }
@@ -178,7 +178,7 @@ body {
 .background-card3 {
     background-image: url('./project-assets/projects-section/3.jpg');
     width: 27vw;
-    height: 40vh;
+    height: 35vh;
     background-size: cover;
     background-position: center;
 }
@@ -193,7 +193,7 @@ body {
     color: #292e47;
     width: 27vw;
     height: 30vh;
-    padding: 2vw 0;
+    padding: 1vw 0;
 }
 
 .project-card-title {
@@ -241,15 +241,15 @@ body {
     background-repeat: none;
     background-position: center;
     background-color: #292e47;
-    padding: 0;
+    padding: 7vw;
     margin: 0;
     position: relative;
 }
 
 .row-superior {
     display: flex;
-    flex-direction: col;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
 }
@@ -270,6 +270,7 @@ body {
     justify-content: space-around;
     align-items: center;
     align-content: center;
+    padding: 2vw;
 }
 
 .row-media h2 {
@@ -284,9 +285,8 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    padding:
 }
-
-.memo
 
 #memoji1 {
     padding: 0 2em;
@@ -310,11 +310,13 @@ body {
     position: absolute;
 }
 
-
+.memoji {
+    width: 20%;
+}
 
 .memoji img {
     width: 50%;
-    padding: 0;
+    padding: 0 3vw;
     margin: 0;
     position: relative;
 }
