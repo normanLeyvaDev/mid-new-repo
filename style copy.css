@@ -18,6 +18,30 @@ body {
     align-content: center;
 }
 
+.hamburger {
+    width: 40px;
+    height: 40px;
+    background: rgb(133, 124, 124);
+}
+.active{
+    background: rgb(189, 175, 189);
+}
+
+.active-nav{
+    position:relative;
+    display: flex;
+    top: 140px; 
+}
+
+.bar {
+    display: block;
+    background-color: white;
+    height: 2px;
+    width: 32px;
+    margin: 12px;
+    border-radius: 2px;
+}
+
 /* .contenedor-nav {
     flex-direction: column;
 } */
@@ -101,6 +125,10 @@ margin-bottom: 3rem;
 
 #amazon {
     display: none;
+}
+
+.card {
+    width: 100%;
 }
 
 .coleccion-de-proyectos {
@@ -337,7 +365,7 @@ margin-bottom: 3rem;
     align-content: left;
     background-color: white;
     color: #292e47;
-    height: 20vh;
+    height: 30vh;
     padding: 2rem;
 
 }
@@ -359,7 +387,8 @@ margin-bottom: 3rem;
     color: #072ac8;
     text-decoration: none;
     font-weight: 500;
-    margin: 1.3em;
+    margin: 0em;
+    padding: 1rem 0;
     /* padding: 1em; */
 }
 
@@ -392,7 +421,7 @@ margin-bottom: 3rem;
     background-color: white;
     justify-content: space-around;
     padding: 2rem 2rem;
-    margin: 0 2rem 3rem;
+    margin:  2rem 3rem;
     /* width: 80rem;
     height: 20rem;
     min-height: 250px;
@@ -689,6 +718,10 @@ margin-bottom: 3rem;
     grid-template-areas: 
 }
 
+.container-formulario input, textarea {
+    background-color: rgb(224, 222, 222);
+}
+
 .container-bajo-footer {
     display: flex;
     justify-content: space-between;
@@ -847,7 +880,7 @@ margin-bottom: 3rem;
     background-color: white;
     color: #292e47;
     width: 27vw;
-    height: 20vh;
+    height: 28vh;
     padding: 0;
 }
 

@@ -37,7 +37,7 @@
 <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0" style="display: none;"></div>
 
 <div class="container-formulario">
-    <form action="action_page.php">
+    <form action="">
 
         <div class="caja1-form">
             <label for="fname">Full Name *</label>
@@ -47,12 +47,12 @@
         <div class="caja2-form">
             <div class="caja-email">
                 <label for="lname">Email</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="email" name="lastname" placeholder="Your last name..">
             </div>
     
             <div class="caja-phone">
                 <label for="subject">Phone</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <input type="text" id="phone" name="lastname" placeholder="Your phone...">
             </div>
         </div>
 
@@ -61,10 +61,11 @@
             <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
         </div>
 
-            <input type="submit" value="Submit">
+            <input id="addPost" type="submit" value="Submit">
   
     </form>
   </div>
+ <div class="successmessage"></div>
 
 
 
@@ -105,7 +106,7 @@
 </div>
 
 
-  <script src="./index.js"></script>
+  <script src="./scripts/form.js"></script>
 
 </body>
 </html>
