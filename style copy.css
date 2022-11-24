@@ -1,5 +1,4 @@
 * {
-   
     font-family: Roboto;
     margin: 0;
     padding: 0;
@@ -10,6 +9,65 @@ body {
     margin: 0 auto; 
     max-width: 1400px;
 }
+
+/****************************** START MOBILE ********************************************************/
+
+.contenedor-logo-circle {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/* .contenedor-nav {
+    flex-direction: column;
+} */
+
+.botones-central {
+    flex-direction: column;
+}
+
+.hero-container {
+    flex-direction: column;
+}
+
+.hero-text {
+    padding: 0;
+}
+.hero-card-1, .hero-card-2 {
+    display: none;
+}
+
+.grid-logos {
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#amazon {
+    display: none;
+}
+
+.coleccion-de-proyectos {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.services-grid {
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 2vw 4vw;
+}
+
+
+/****************************** START PC ********************************************************/
+
+
 
 .contenedor-nav {
     display: flex;
@@ -48,6 +106,7 @@ body {
     width: 9em;
     margin: 1em 2em;
     padding: 1em 0;
+    display: none;
 
 }
 .boton-contacta {
@@ -72,26 +131,26 @@ body {
 
 .hero-text {
     padding: 10em 5em;
-    padding: 7em 0;
-    margin: 0;
+    padding: 4em 0;
+    margin: 0 ;
 }
 
 .hero-text h1 {
-    text-align: left;
-    font-size: 4em;
+    text-align: center;
+    font-size: 2.2em;
     padding-bottom: 2%;
     margin: 0
 }
 
 .hero-description {
-    font-size: 20px;
-    text-align: left;
+    font-size: 19px;
+    text-align: center;
     color: #6C718B
 }
 
 .hero-buttons {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 2em 0;
@@ -137,20 +196,6 @@ body {
     right: 0;
 }
 
-.services-grid {
-    margin: 0 1rem;
-    padding: 0rem;
-}
-
-.grid-logos {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2em 2em
-
-}
-
 .seccion-proyectos h2 {
     font-size: 3vw;
     font-weight: bold;
@@ -158,15 +203,16 @@ body {
 }
 
 .coleccion-de-proyectos {
-    display: flex;
-    justify-content: space-around;
-    align-content: center;
-    margin: 2.5rem auto;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
 }
 
 .background-card1 {
     background-image: url('./project-assets/projects-section/1.jpg');
-    width: 27vw;
+    width: 100%;
     height: 25vh;
     background-size: cover;
     background-position: center;
@@ -174,7 +220,7 @@ body {
 
 .background-card2 {
     background-image: url('./project-assets/projects-section/2.jpg');
-    width: 27vw;
+    width: 100%;
     height: 25vh;
     background-size: cover;
     background-position: center;
@@ -182,7 +228,7 @@ body {
 
 .background-card3 {
     background-image: url('./project-assets/projects-section/3.jpg');
-    width: 27vw;
+    width: 100%;
     height: 25vh;
     background-size: cover;
     background-position: center;
@@ -191,6 +237,15 @@ body {
 .project-card {
     margin: 0.5rem;
 }
+.grid-logos {
+    text-align: center;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: px 0px; 
+    grid-template-areas: 
+  }
 
 .project-card-text {
     display: flex;
@@ -200,9 +255,9 @@ body {
     align-content: left;
     background-color: white;
     color: #292e47;
-    width: 27vw;
     height: 20vh;
-    padding: 0;
+    padding: 2rem;
+
 }
 
 .project-card-title {
@@ -234,7 +289,90 @@ body {
 .projects-headings {
     font-size: 3vw;
     font-weight: bold;
-    margin: 1rem 0;    
+    margin: 3rem; 
+}
+.services-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 2rem 0rem;
+
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    background-color: white;
+    justify-content: space-around;
+    padding: 2rem 2rem;
+    margin: 0 2rem 3rem;
+    width: 80rem;
+    height: 20rem;
+    min-height: 250px;
+    min-width: 320px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: left;
+    font-weight: bold;
+    font-size: 20px;
+    /* padding: 1em; */
+    margin: 1em 0;
+}
+
+.service-icon1 {
+    background-image: url(./project-assets/services-section/icons/1.svg);
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 1em;
+    /* margin: 0 1em; */
+}
+
+.service-icon2 {
+    background-image: url(./project-assets/services-section/icons/2.svg);
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 1em;    
+    /* margin: 0 1em; */
+}
+
+.service-icon3 {
+    background-image: url(./project-assets/services-section/icons/3.svg);
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding: 1em;
+    /* margin: 0 1em; */
+}
+
+.service-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    align-content: left;
+    justify-content: left;
 }
 
 .testimonials-grill {
@@ -265,17 +403,20 @@ body {
 
 .testimonials-grill h1 {
     color: white;
-    margin: 4.5rem auto;
-    font-size: 40px;
+    font-size: 42px;
     text-align: center;
+    margin: 4rem 0;
+    padding: 0 10rem;
 }
 
 .testimonials-grill h2 {
     color:#ffc600;
-    font-size: 24px;
+    font-size: 22px;
     text-align: center;
-    margin: 4rem 26rem;
+    margin: 4rem 0;
+    padding: 0 7rem;
     font-weight: 500;
+    line-height: 2rem;
 }
 
 .testimonials-grill > div {
@@ -287,6 +428,7 @@ body {
 .testimonials-grill img {
     width: 10rem;
     position: absolute;
+    display: none;
 }
 
 .emoji1 {
@@ -312,7 +454,7 @@ body {
 
 .container-de-proyectos {
     padding: 0;
-    margin: 1rem 1 rem;
+    margin: 1rem 2.5rem;
 }
 
 .flex-kris {
@@ -350,15 +492,7 @@ body {
     text-decoration: none;
 }
 
-.services-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    margin: 2vw 4vw;
 
-}
 
 .service-card {
     display: flex;
@@ -465,11 +599,12 @@ body {
     align-content: center;
 }
 .cajon-formulario {
-    display: flex;;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    text-align: center;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
 }
 
 .container-bajo-footer {
@@ -514,10 +649,9 @@ body {
     background-image: url(./project-assets/newsletter/icon/mail.svg);
     background-position:left;
     background-repeat: no-repeat;
-    width: 12vw;
+    width: 20rem;
     height: 6vh;
     border: 0;
-    padding: 0 3vw;
     margin: 2vw 1vw;
 }
 
@@ -526,76 +660,126 @@ body {
     color: white;
     text-decoration: none;
     border: 0;
-    width: 6vw;
+    width: 20rem;
     height: 6vh;
 }
 
 
-/* APARTADO DE RESPONSIVE */
+/********** responsive para tablet ****************/
+@media (min-width: 769px) {
 
-/* responsive para tablet */
-@media (min-width: 768) {
-
+    /* body {
+        background-color: red;
+    } */
     .hero-container {
     flex-direction: column;
     }
 
-
-/* responsive para smartphone
-@media (min-width: 320px) and (max-width: 767px) {
-    body {
-    }
-    /* CSS */
-
-    .contenedor-logo-circle {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .contenedor-nav {
-        flex-direction: column;
-    }
-
-    .botones-central {
-        flex-direction: column;
-    }
-
-    .hero-container {
-        flex-direction: column;
-    }
-
-    .hero-text {
-        padding: 0;
-    }
     .hero-card-1, .hero-card-2 {
-        display: none;
+        display: inline-block;
     }
 
-    .grid-logos {
-        align-items: center;
-        align-content: center;
-        justify-content: space-between;
-        flex-direction: column;
-        padding: 2rem;
+    .testimonials-grill img {
+        display: inline-block;
+        width: 6rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /* body {
+        background-color: red;
+    } */
+
+.botones-central {
+    flex-direction: row;
+}
+
+.hero-text h1 {
+    font-size: 4em;
+}
+
+.hero-description {
+    font-size: 20px;
+
+}
+.hero-container {
+    flex-direction: row;
     }
 
-    #amazon {
-        display: none;
-    }
+#amazon {
+    display: inline-block;
+}
 
-    .coleccion-de-proyectos {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    }
+.coleccion-de-proyectos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.grid-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.background-card1 {
+    background-image: url('./project-assets/projects-section/1.jpg');
+    width: 27vw;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+}
 
-    .services-grid {
-        flex-direction: column;
-        align-content: center;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        margin: 2vw 4vw;
-    }
-  }
+.background-card2 {
+    background-image: url('./project-assets/projects-section/2.jpg');
+    width: 27vw;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-card3 {
+    background-image: url('./project-assets/projects-section/3.jpg');
+    width: 27vw;
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+}
+.project-card {
+    margin: 0.5rem;
+}
+.project-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: left;
+    align-content: left;
+    background-color: white;
+    color: #292e47;
+    width: 27vw;
+    height: 20vh;
+    padding: 0;
+}
+
+.project-card-title {
+    line-height: 2em;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: left;
+    padding: 1vw 2vw;
+}
+
+.project-card-subtitle {
+    text-align: left;
+    padding: 0vw 2vw 2vw;
+}
+
+.project-link {
+    color: #072ac8;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 1.3em;
+    /* padding: 1em; */
+}
+
+
+}
