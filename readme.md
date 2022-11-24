@@ -14,3 +14,6 @@ Estilizado CSS en curso
 ## Miércoles 23
 <br>
 Finalizo CSS del main, falta mediaqueries
+## Jueves 24
+<br>
+He finalizado practicamente el CSS de la pagina main, me falta hacer las 2 páginas a parte y pasarle css. Pendiente de empezar con JS.
