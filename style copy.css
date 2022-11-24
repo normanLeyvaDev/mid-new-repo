@@ -22,6 +22,60 @@ body {
     flex-direction: column;
 } */
 
+.container-formulario {
+    margin: 0 4rem;
+}
+
+.caja1-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.caja2-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+}
+
+.caja-email {
+    width: -webkit-fill-available;
+    margin-left: 0;
+}
+
+.caja-phone {
+        width: -webkit-fill-available;
+        margin-left: 0;
+}
+
+.caja3-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.container-formulario [type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 0px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+.container-formulario [type=submit] {
+background-color: #072AC8;
+color: white;
+padding: 1.5rem 5rem;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom: 3rem;
+}
+
 .botones-central {
     flex-direction: column;
 }
@@ -62,6 +116,34 @@ body {
     align-items: center;
     align-content: center;
     margin: 2vw 4vw;
+}
+
+.container-project-simplify {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content: left: ;
+    align-items: left: ;
+}
+
+.contenedor-simplify-headers {
+    margin-bottom: 2rem;
+}
+.contenedor-simplify-headers h1 {
+    font-size: 3rem;
+}
+
+.contenedor-simplify-headers h3 {
+    font-size: 1.5rem;
+    color: #898a8e;
+}
+
+.container-project-simplify {
+    margin: 1rem 3rem;
+}
+
+.imagen-cabecera-simplify {
+    margin-bottom: 2rem;
 }
 
 
@@ -311,10 +393,10 @@ body {
     justify-content: space-around;
     padding: 2rem 2rem;
     margin: 0 2rem 3rem;
-    width: 80rem;
+    /* width: 80rem;
     height: 20rem;
     min-height: 250px;
-    min-width: 320px;
+    min-width: 320px; */
 }
 
 .project-title {
@@ -503,10 +585,10 @@ body {
     justify-content: space-around;
     padding: 2rem 2rem;
     margin: 0 1rem;
-    width: 80rem;
+    /* width: 80rem;
     height: 20rem;
     min-height: 250px;
-    min-width: 320px;
+    min-width: 320px; */
 }
 
 .project-title {
@@ -682,6 +764,15 @@ body {
     .testimonials-grill img {
         display: inline-block;
         width: 6rem;
+    }
+
+    .caja2-form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .caja-phone {
+        padding-left: 2rem;
     }
 }
 
