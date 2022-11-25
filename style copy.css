@@ -316,7 +316,7 @@ body {
 .container-formulario [type=text], select, textarea {
         width: 100%; /* Full width */
         padding: 12px; /* Some padding */ 
-        border: 0px solid #ccc; /* Gray border */
+        border: 0px solid rgb(228, 228, 228); /* Gray border */
         border-radius: 4px; /* Rounded borders */
         box-sizing: border-box; /* Make sure that padding and width stays in place */
         margin-top: 6px; /* Add a top margin */
@@ -453,7 +453,7 @@ margin-bottom: 3rem;
 }
 
 .botones-central {
-    padding: 0 8%;
+    padding: 0 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -467,6 +467,10 @@ margin-bottom: 3rem;
     display: inline-block;
     text-decoration: none;
     color: #6C718B
+}
+
+.botones-central li {
+    padding: 0 1rem;
 }
 
 .contenedor-boton-contacta {
@@ -1006,7 +1010,7 @@ margin-bottom: 3rem;
 }
 
 .container-formulario input, textarea {
-    background-color: rgb(224, 222, 222);
+    background-color: rgb(222, 219, 219);
 }
 
 .container-bajo-footer {
@@ -1046,7 +1050,7 @@ margin-bottom: 3rem;
 }
 
 .cta-subtitle {
-    color: #6C718B;
+    color: #efefef;
 }
 
 .entra-email input {
