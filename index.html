@@ -15,31 +15,46 @@
 <!-- SECCION HEADER -->
 
 <div class="contenedor-nav">
-    <div class="contenedor-logo-circle">
-        <img src="./project-assets/logos/circle.svg" />
-        <a href="#" class="navbar-logo w-nav-brand"></a>
-    </div>    
-    <nav role="navigation" class="botones-central">
-        <div class="nav-menu">
-        <a href="/">Home</a>
-        <a href="#">Projects</a>
-        <a href="#">Services</a>
-    </div>
+    
+    <img src="./project-assets/logos/circle.svg" />
+    
+    <!-- ok-->
+        <nav class="botones-central">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./simplify.html" target="_blank">Projects</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+    <!-- ok-->
+    <input type="checkbox" id="hamburger-input" class="burger-shower" />
+    <label id="hamburger-menu" for="hamburger-input">
+      <nav id="sidebar-menu">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./simplify.html">Projects</a></li>
+          <li><a href="#">Services</a></li>
+   
+        </ul>
+      </nav>
+    </label>
 
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
 
-    </nav>
+
+
+    <div class="overlay"></div>
 
     <div class="contenedor-boton-contacta">
-        <a href="/contact-us" class="boton-contacta">Contact Us</a>
+
+    
+
+        <a href="./form.html" target="_blank" class="boton-contacta">Contact Us</a>
     </div>
+
+    
 </div>
 
-<!---->
 <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0" style="display: none;"></div>
 
 <!-- SECCION MAIN -->
@@ -92,9 +107,9 @@
                 <div id="output1" class="project-card-text">
                     <div class="project-card-title">Simplify</div>
                     <div class="project-card-subtitle">UI Design & App Development</div>
-                    
+                    <a href="./simplify.html" target="_blank" class="project-link">Learn More</a>
+
                 </div>
-                <a href="./simplify.html" target="_blank" class="project-link">Learn More</a>
             </div>
 
 
@@ -103,9 +118,9 @@
                 <div id="output2" class="project-card-text">
                     <div class="project-card-title">Dashcoin</div>
                     <div class="project-card-subtitle">Web Development</div>
-                   
+                    <a href="#" target="_blank" class="project-link">Learn More</a>
                 </div>
-                <a href="#" target="_blank" class="project-link">Learn More</a>
+             
             </div>
 
             <div class="project-card">
@@ -113,9 +128,9 @@
                 <div id="output3" class="project-card-text">
                     <div class="project-card-title">Vectorify</div>
                     <div class="project-card-subtitle">User Experience Design</div>
-                    
+                    <a href="#" target="_blank" class="project-link">Learn More</a>
                 </div>
-                <a href="#" target="_blank" class="project-link">Learn More</a>
+                
             </div>
             
         </div>
